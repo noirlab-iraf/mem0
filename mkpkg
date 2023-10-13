@@ -82,6 +82,7 @@ macosx:                                # install Mac OS X (Apple) binaries
         $verbose off
         $set DIRS = "lib src"
         !$(hlib)/mkfloat.csh macosx -d $(DIRS)
+        !ln -s bin.macosx bin.macos64
         ;
 macintel:                               # install Mac OS X (Intel) binaries
 	$ifnfile (bin.macintel)
